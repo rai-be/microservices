@@ -49,7 +49,6 @@ public class ConsumerAddressServiceTest {
         mockConsumerResponse.setId("123");
         mockConsumerResponse.setName("Frodo");
         when(consumerClient.registerConsumerClient(any(ConsumerRegisterDTO.class))).thenReturn(mockConsumerResponse);
-
         AddressResponseDTO mockAddressResponse = new AddressResponseDTO();
         mockAddressResponse.setId("456");
         mockAddressResponse.setConsumerId("123");

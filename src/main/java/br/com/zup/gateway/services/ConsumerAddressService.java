@@ -25,7 +25,6 @@ public class ConsumerAddressService {
         AddressResponseDTO addressResponseDTO = registerAddress(consumerAddressRegisterDTO, consumerResponseDTO.getId());
         return new ConsumerAddressResponseDTO(consumerResponseDTO, addressResponseDTO);
     }
-
     private ConsumerResponseDTO registerConsumer(ConsumerAddressRegisterDTO consumerAddressRegisterDTO) {
         ConsumerRegisterDTO consumerRegisterDTO = mapToConsumerRegisterDTO(consumerAddressRegisterDTO);
         return consumerClient.registerConsumerClient(consumerRegisterDTO);
